@@ -6,7 +6,7 @@
     height: 100%;
     z-index: 10;
     filter: opacity(0.5);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(148, 175, 185, 0.7);
 }
 
 .modal {

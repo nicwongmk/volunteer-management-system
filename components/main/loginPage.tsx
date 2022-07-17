@@ -3,6 +3,7 @@ import loginLogo from "../UI/main/loginLogo.png";
 import logo from "../UI/logo/logo.png";
 import styles from "../../styles/components/main/loginPage.module.css";
 import SimpleInput from "../UI/input/simpleInput";
+import MainButton from "../UI/button/mainButton";
 
 const LoginPage = () => {
     return (
@@ -14,8 +15,12 @@ const LoginPage = () => {
             </div>
             <div className={ styles.rightContainer }>
                 <img src={ logo.src } />
-                <p>Welcome to the <br /> Volunteer Management System</p>
-                <SimpleInput type={""} value={undefined} onChange={undefined} />
+                <h2>Welcome to the <br /> Volunteer Management System</h2>
+                <p>Login name</p>
+                <SimpleInput type={ "" } value={undefined} onChange={undefined} />
+                <p>Password</p>
+                <SimpleInput type={ "password" } value={undefined} onChange={undefined} />
+                <MainButton className={ styles.button }>Login</MainButton>
             </div>
         </Modal>
     );

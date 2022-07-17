@@ -5,6 +5,7 @@
     height: 40rem;
     max-height: 40rem;
     font-family: 'Oxygen', sans-serif;
+    cursor: default;
 }
 
 .leftContainer {
@@ -39,6 +40,7 @@
 .rightContainer {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -46,11 +48,58 @@
     position: absolute;
     width: 5rem;
     top: 4rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.rightContainer > h2 {
+    position: absolute;
+    top: 11rem;
+    color: rgb(163, 163, 163);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.rightContainer > input {
+    top: 20rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .rightContainer > p {
-    position: absolute;
-    top: 10rem;
+    position: relative;
+    top: 1rem;
+    padding-left: 5rem;
     color: rgb(163, 163, 163);
-    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.rightContainer .button {
+    position: relative;
+    width: 8rem;
+    height: 2.5rem;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+}
+
+.rightContainer .otherInformation {
+    top: 3rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: ;
 }
