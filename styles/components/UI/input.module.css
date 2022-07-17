@@ -1,0 +1,7 @@
+.simpleInput {
+    height: 2rem;
+    width: 15rem;
+    border: 0;
+    border-bottom: rgb(217, 217, 217) solid 1px;
+    outline: none;
+}

@@ -1,0 +1,21 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    padding: 1rem;
+    background-color: rgb(30, 50, 115);
+    font-family: 'Roboto Condensed';
+    color: white;
+    cursor: default;
+}
+
+.navBar > p{
+    font-size: 2rem;
+    margin-right: 10%;
+}
+
+.navBar img {
+    height: 5rem;
+    margin-left: 10%;
+}
