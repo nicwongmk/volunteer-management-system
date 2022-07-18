@@ -1,4 +1,4 @@
-.loginPage {
+.welcomePage {
     display: grid;
     grid-template-columns: 25rem 25rem;
     max-width: 50rem;
@@ -18,17 +18,16 @@
 }
 
 .leftContainer > img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
     margin: auto;
     width: 20rem;
 }
 
 .leftContainer > h2 {
+    font-family: 'Dancing Script', cursive;
     position: absolute;
     bottom: 10rem;
     margin: 0;
+    font-size: 1.8rem;
 }
 
 .leftContainer > p {
@@ -37,14 +36,14 @@
     margin: 0;
 }
 
-.rightContainer {
+.loginContainer {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.rightContainer > img {
+.loginContainer > img {
     position: absolute;
     width: 5rem;
     top: 4rem;
@@ -53,7 +52,7 @@
     margin: auto;
 }
 
-.rightContainer > h2 {
+.loginContainer > h2 {
     position: absolute;
     top: 11rem;
     color: rgb(163, 163, 163);
@@ -65,7 +64,7 @@
     margin: auto;
 }
 
-.rightContainer > input {
+.welcomePage input {
     top: 20rem;
     left: 0;
     right: 0;
@@ -74,7 +73,7 @@
     font-family: 'Oxygen', sans-serif;
 }
 
-.rightContainer > p {
+.welcomePage .inputTag {
     position: relative;
     top: 1rem;
     padding-left: 5rem;
@@ -83,7 +82,7 @@
     font-weight: 200;
 }
 
-.rightContainer .button {
+.welcomePage .button {
     position: relative;
     width: 8rem;
     height: 2.5rem;
@@ -95,11 +94,44 @@
     font-size: 1rem;
 }
 
-.rightContainer .otherInformation {
-    top: 3rem;
+.loginContainer .otherInformation {
+    position: absolute;
+    width: 100%;
+    top: 28rem;
+    color: rgb(163, 163, 163);
+    font-size: 0.8rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.loginContainer > a {
+    position: absolute;
+    top: 29rem;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    text-align: ;
+    width: 4rem;
+    color: rgb(163, 163, 163);
+    font-size: 0.7rem;
+    font-weight: 200;
+    text-align: center;
+    cursor: pointer;
+}
+
+.signUpContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 3rem;
+}
+
+.signUpContainer h2 {
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    margin-bottom: 1rem;
+    color: rgb(163, 163, 163);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
 }
