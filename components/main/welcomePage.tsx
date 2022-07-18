@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Modal from "../UI/modal/modal";
 import LoginPage from "./loginPage";
+import SignUpPage from "./signUpPage";
 import loginLogo from "../UI/logo/loginLogo.png";
 import styles from "../../styles/components/main/welcomePage.module.css";
-import SignUpPage from "./SignUpPage";
 
 const WelcomePage = () => {
-    const [pageContent, setPageContext] = useState("login")
+    const [pageContent, setPageContent] = useState("login")
 
     return (
         <Modal className={ styles.welcomePage } closeModal={undefined}>
@@ -15,8 +15,8 @@ const WelcomePage = () => {
                 <h2>Thank you for using the system</h2>
                 <p>Love from Nicholas</p>    
             </div>
-            { (pageContent === "login") && <LoginPage signUpPageHandler={ () => setPageContext("signUp") }/>}
-            { (pageContent === "signUp") && <SignUpPage />}
+            { (pageContent === "login") && <LoginPage signUpPageHandler={ () => setPageContent("signUp") }/>}
+            { (pageContent === "signUp") && <SignUpPage loginPageHandler={ () => setPageContent("login") }/>}
         </Modal>
     );
 };

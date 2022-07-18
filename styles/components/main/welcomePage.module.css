@@ -20,6 +20,7 @@
 .leftContainer > img {
     margin: auto;
     width: 20rem;
+    animation: slide-down 1000ms ease-out forwards;
 }
 
 .leftContainer > h2 {
@@ -28,12 +29,18 @@
     bottom: 10rem;
     margin: 0;
     font-size: 1.8rem;
+    color: transparent;
+    animation: slide-up 1000ms ease-out forwards;
+    animation-delay: 500ms;
 }
 
 .leftContainer > p {
     position: absolute;
     bottom: 8rem;
     margin: 0;
+    color: transparent;
+    animation: slide-up 1000ms ease-out forwards;
+    animation-delay: 800ms;
 }
 
 .loginContainer {
@@ -134,4 +141,90 @@
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
+}
+
+.signUpContainer > a {
+    position: absolute;
+    top: 32.5rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4rem;
+    color: rgb(163, 163, 163);
+    font-size: 0.7rem;
+    font-weight: 200;
+    text-align: center;
+    cursor: pointer;
+}
+
+.welcomePage a:hover {
+    font-weight: bold;
+}
+
+.registeredContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.registeredContainer > img {
+    position: absolute;
+    width: 5rem;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.registeredContainer > h2 {
+    position: absolute;
+    top: 18rem;
+    color: rgb(163, 163, 163);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.registeredContainer > p {
+    position: absolute;
+    top: 10rem;
+    color: rgb(163, 163, 163);
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.registeredContainer > button {
+    position: absolute;
+    width: 8rem;
+    height: 2.5rem;
+    top: 28rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+}
+
+@keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      color: white;
+    }
 }

@@ -1,9 +1,32 @@
+.submitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+    border: none;
+    border-radius: 25px;
+    font: inherit;
+    font-size: 1.5rem;
+    background-color: rgb(163, 163, 163);
+    color: white;
+    transition: .3s;
+}
+
+.submitButton:hover {
+    background-color: rgb(99, 99, 99);
+}
+
+.submitButton:active {
+    background-color: rgb(67, 67, 67);
+    transition: 0s;
+}
+
 .mainButton {
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    padding: 0.75rem 3rem;
     margin: 0;
     border: none;
     border-radius: 25px;
