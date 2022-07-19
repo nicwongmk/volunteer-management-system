@@ -1,9 +1,9 @@
 import { SetStateAction, useState } from "react";
 import axios from "axios";
-import SimpleInput from "../UI/input/simpleInput";
-import SubmitButton from "../UI/button/submitButton";
+import SimpleInput from "../../UI/input/simpleInput";
+import SubmitButton from "../../UI/button/submitButton";
 import RegisteredPage from "./registeredPage";
-import styles from "../../styles/components/main/welcomePage.module.css";
+import styles from "../../../styles/components/main/welcomePage.module.css";
 
 
 const SignUpPage = ({ loginPageHandler }: any) => {

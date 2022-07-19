@@ -1,6 +1,6 @@
-import logo from "../UI/logo/logo.png";
-import styles from "../../styles/components/main/welcomePage.module.css";
-import MainButton from "../UI/button/mainButton";
+import logo from "../../UI/logo/logo.png";
+import styles from "../../../styles/components/main/welcomePage.module.css";
+import MainButton from "../../UI/button/mainButton";
 
 const RegisteredPage = ({ loginPageHandler }: any) => {
     return (
