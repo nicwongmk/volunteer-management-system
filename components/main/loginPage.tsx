@@ -1,17 +1,28 @@
-import { SetStateAction, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import axios from "axios";
 import logo from "../UI/logo/logo.png";
 import SimpleInput from "../UI/input/simpleInput";
 import styles from "../../styles/components/main/welcomePage.module.css";
 import SubmitButton from "../UI/button/submitButton";
 
-const LoginPage = ({ signUpPageHandler }: any) => {
+const LoginPage = ({ signUpPageHandler, loginHandler }: any) => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const [login, setLogin] = useState(false);
+
+    useEffect(() => {
+        loginHandler(login);
+    })
 
     const onSubmitHandler = (event: any) => {
         event.preventDefault();
-    }
+        const logining = {
+            username: username,
+            password: password,
+        };
+        axios.post("http://localhost:4000/login", logining)
+            .then(res => res.data.status ? setLogin(true) : setLogin(false));
+    };
 
     return (
         <form className={ styles.loginContainer } onSubmit={ onSubmitHandler }>

@@ -93,7 +93,7 @@
     position: relative;
     width: 8rem;
     height: 2.5rem;
-    top: 2rem;
+    top: 3rem;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -101,19 +101,9 @@
     font-size: 1rem;
 }
 
-.loginContainer .otherInformation {
-    position: absolute;
-    width: 100%;
-    top: 28rem;
-    color: rgb(163, 163, 163);
-    font-size: 0.8rem;
-    font-weight: 200;
-    text-align: center;
-}
-
 .loginContainer > a {
     position: absolute;
-    top: 29rem;
+    top: 30rem;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -145,7 +135,7 @@
 
 .signUpContainer > a {
     position: absolute;
-    top: 32.5rem;
+    top: 33.5rem;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -179,7 +169,7 @@
 
 .registeredContainer > h2 {
     position: absolute;
-    top: 18rem;
+    top: 19rem;
     color: rgb(163, 163, 163);
     font-size: 1rem;
     font-weight: 400;
@@ -187,7 +177,7 @@
 
 .registeredContainer > p {
     position: absolute;
-    top: 10rem;
+    top: 11rem;
     color: rgb(163, 163, 163);
     font-family: 'Dancing Script', cursive;
     font-size: 4rem;
@@ -198,7 +188,7 @@
     position: absolute;
     width: 8rem;
     height: 2.5rem;
-    top: 28rem;
+    top: 30rem;
     left: 0;
     right: 0;
     margin-left: auto;
